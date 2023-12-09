@@ -23,8 +23,10 @@ const router = createBrowserRouter([
 function App() {
 
   const [categoryID,setCategoryID] = useState<number|undefined>()
+  const [questionCount,setQuestionCount] = useState<number|undefined>()
+  
   return (
-    <QuizContext.Provider value={{categoryID, setCategoryID}}>
+    <QuizContext.Provider value={{categoryID, setCategoryID, questionCount, setQuestionCount}}>
 
         <RouterProvider router={router} />
 

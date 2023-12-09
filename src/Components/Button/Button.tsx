@@ -3,12 +3,13 @@ import "./ButtonStyles.css"
 import { useContext } from "react"
 interface ButtonProps {
     categoryID?: number
+    questionCount?: number
     onClick: ()=>void
     disabled: boolean
     children?:React.ReactNode
   }
   
-  const Button = ({onClick,disabled,children}:ButtonProps) => {
+  const Button = ({onClick,children}:ButtonProps) => {
     
     return (
       <button className="text-xl underline content-center" onClick={() => {
