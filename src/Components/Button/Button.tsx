@@ -1,11 +1,20 @@
+import QuizContext from "../../QuizContext"
+import "./ButtonStyles.css"
+import { useContext } from "react"
 interface ButtonProps {
-    categoryName: string
+    categoryID?: number
+    onClick: ()=>void
+    disabled: boolean
+    children?:React.ReactNode
   }
   
-  const Button = ({categoryName}:ButtonProps) => {
+  const Button = ({onClick,disabled,children}:ButtonProps) => {
+    
     return (
-      <button>
-        {categoryName}
+      <button className="text-xl underline content-center" onClick={() => {
+        onClick();
+      }}>
+        {children}
       </button>
     )
   }

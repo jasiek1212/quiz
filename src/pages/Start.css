@@ -1,0 +1,15 @@
+.category{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+}
+.quiz{
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(105, 206, 240);
+    display: flex;
+}
+
+.start{
+    font-size: 50px
+}
