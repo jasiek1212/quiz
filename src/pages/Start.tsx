@@ -27,7 +27,6 @@ export default function Start() {
     }))));
   }}, [categoryNames])
 
-  console.log({categoryNames})
   if (categoryNames.length === 0){
     return <div>Loading...</div> 
   }

@@ -1,6 +1,5 @@
-import QuizContext from "../../QuizContext"
 import "./ButtonStyles.css"
-import { useContext } from "react"
+
 interface ButtonProps {
     categoryID?: number
     questionCount?: number
